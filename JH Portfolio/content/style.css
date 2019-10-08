@@ -309,7 +309,7 @@ nav ul li a {
 }
 
 #about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', helvetica;
   font-size: 28px;
   text-align: left;
 }
@@ -448,6 +448,10 @@ nav ul li a {
   max-width: 100%;
 }
 
+.portfolio-thumbnail img: {
+  color:saddlebrown;
+  max-width: 100%;
+}
 /*-----------------------------------------------------------------------------------*/
 /*  Journal
 /*-----------------------------------------------------------------------------------*/
@@ -628,4 +632,86 @@ nav ul li a {
 
 .credits {
   font-size: 13px;
+}
+
+#paddedCol.row{
+    margin-bottom
+
+}
+
+.modal{
+    animation-name:flipInX
+}
+@keyframes tada {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.tada {
+    animation-duration: 0.75s;
+    animation-name: tada;
+}
+
+@keyframes flipInX {
+    from {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    to {
+        transform: perspective(400px);
+    }
+}
+
+.flipInX {
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+    animation-duration:0.75s;
+}
+
+.fizz{
+    color:blue;
+}
+
+.buzz{
+    color:red;
+}
+
+.fizzbuzz{
+    color:purple;
+}
+.fizz, .buzz, .fizzbuzz, .loop{
+
 }

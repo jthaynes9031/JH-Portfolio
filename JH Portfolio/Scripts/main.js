@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Jonathan Haynes.", "Designer.", "Developer.", "Freelancer.", "Photographer"],
+      strings: ["Jonathan Haynes.", "Designer.", "Freelancer.", "Photographer"],
       typeSpeed: 100,
       loop: true,
     });
@@ -154,4 +154,155 @@ $(window).load(function(){
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
 
+})
+
+
+
+
+
+//Traditonal solve for Fizz Buzz loop
+function FizzBuzzA(value1, value2){
+    let returnValue = "";
+    for (let i = 1; i <= 100; i++){
+        if (i % value1 == 0 && i % value2 == 0) {
+            returnValue += 'FizzBuzz';
+
+        }
+        else if (i % value1 == 0) {
+            returnValue += 'Fizz ';
+        }
+        else if (i % value2 == 0) {
+            returnValue += 'Buzz';
+        }
+        else {
+            returnValue += i +' ';
+        }
+    }
+   // return returnValue;
+    document.getElementById('fbResults').innerHTML = returnValue;
+
+}
+
+$("#fizzClear").click(function () {
+    $("#num1").val(" ");
+    $("#num2").val(" ");
+    $("#fbResults").text(" ");
+});
+
+
+//Math exercise
+$("#mathexer").click(function () {
+
+    var number1 = Number($("#input1").val());
+    var number2 = Number($("#input2").val());
+    var number3 = Number($("#input3").val());
+    var number4 = Number($("#input4").val());
+    var number5 = Number($("#input5").val());
+
+//calculations
+    var sum = number1 + number2 + number3 + number4 + number5;
+    var smallest = Math.min(number1, number2, number3, number4, number5);
+    var largest = Math.max(number1, number2, number3, number4, number5);
+    var product = number1 * number2 * number3 * number4 * number5;
+    var average = sum / 5;
+
+//out results
+    var sumOutput = ("The sum of your number is " + sum);
+    $("#results").text(sumOutput);
+    var smallestOutput = ("The smallest number is " + smallest);
+    $("#resultsSmallest").text(smallestOutput);
+    var largestOutput = ("The largest number is " + largest);
+    $("#resultsLargest").text(largestOutput);
+    var productOutput = ("The product of your number is " + product);
+    $("#resultsProduct").text(productOutput);
+    var averageOutput = ("The average of your number is " + average);
+    $("#resultsAverage").text(averageOutput);
+});
+$("#btnClear").click(function () {
+    $("#input1").val("  ");
+    $("#input2").val(" ");
+    $("#input3").val(" ");
+    $("#input4").val(" ");
+    $("#input5").val(" ");
+    $("#resultsSmallest").text(" ");
+    $("#resultsLargest").text(" ");
+    $("#resultsProduct").text(" ");
+    $("#resultsAverage").text(" ");
+    $("#results").text(" ");
+});
+
+
+//Factorial
+//Step 1: Get the user data
+$("#btnFact").click(function () {
+    var number = Number($("#fact").val());
+
+    //I am using an If statement to evaluate something
+    if (number > 170) {
+        swal.fire("Please enter positive numbers less than 171!");
+        $("#fact").val("");
+        return;
+    }
+
+    //Step 2: Perform the algorithm
+    for (var foo = number - 1; foo > 1; foo--) {
+        //How do we calculate the factorial
+        number *= foo;
+    }
+
+
+    //Step 3: Show the result
+    $("#factOut").text(number);
+    //Clear button
+});
+$("#factbtnClear").click(function () {
+    $("#fact").val("");
+    $("#factOut").text("");
+});
+
+
+//palindrone
+$("#palindrone").click(function () {
+    var ogWord = String($("#inputPal").val());
+    var word = ogWord.toLowerCase().replace(/\s/g, '');
+    for (var n = word.length - 1, revWord = ""; n >= 0; n--) {
+        revWord += word.substr(n, 1);
+    }
+    revWord = revWord.toLowerCase().replace(/\s/g, '');
+    var message = "";
+    if (revWord == word) {
+        var outPal = (ogWord + " Is a palindrome :D!!!");
+        $("#resultsPal").text(outPal);
+    } else {
+        var outPal = (ogWord + " is not a palindrome :(");
+        $("#resultsPal").text(outPal);
+    }
+})
+
+$("#palbtnClear").click(function () {
+    $("#inputPal").val("");
+    $("#resultsPal").text("");
+});
+
+//toggle popover
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+//Show code
+$("#mathCode").hide()
+$("#btnMathCode").click(function () {
+    $("#mathCode").toggle()
+})
+$("#fizzCode").hide()
+$("#btnfizzCode").click(function () {
+    $("#fizzCode").toggle()
+})
+$("#factCode").hide()
+$("#btnfactCode").click(function () {
+    $("#factCode").toggle()
+})
+$("#palCode").hide()
+$("#btnpalCode").click(function () {
+    $("#palCode").toggle()
 })

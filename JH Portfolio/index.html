@@ -11,11 +11,15 @@
     <meta content="" name="description">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,
-  <!-- Bootstrap CSS File -->700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="/content/bootstrap.css" rel="stylesheet" />
+    <link href="/content/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="animate.min.css">
 
-    <link href="/co
-ntent/bootstrap.min.css" rel="stylesheet">
+
     <!-- Libraries CSS Files -->
     <link href="/content/ionicons.min.css" rel="stylesheet">
     <link href="/content/owl.carousel.min.css" rel="stylesheet">
@@ -28,8 +32,25 @@ ntent/bootstrap.min.css" rel="stylesheet">
     <!-- Responsive css -->
     <link href="/content/responsive.css" rel="stylesheet">
 
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png">
+    <style>
+        .btn-Wide {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .txt-Wide {
+            width: 100%;
+            margin-top: 5px;
+            background-color: white;
+            font-weight: 600;
+        }
+
+        .padded {
+        }
+    </style>
 
     <!-- =======================================================
       Theme Name: Folio
@@ -55,8 +76,8 @@ ntent/bootstrap.min.css" rel="stylesheet">
                 <ul class="nav-menu list-unstyled">
                     <li><a href="#header" class="smoothScroll">Home</a></li>
                     <li><a href="#about" class="smoothScroll">About</a></li>
-                    <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-                    <li><a href="#resume" class="smoothScroll">Resume</a></li>
+                    <li><a href="#portfolio" class="smoothScroll">Exercises</a></li>
+                    <li><a href="#resume" class="smoothScroll">Projects</a></li>
                     <li><a href="#contact" class="smoothScroll">Contact</a></li>
                 </ul>
 
@@ -65,11 +86,11 @@ ntent/bootstrap.min.css" rel="stylesheet">
     </nav>
     <!-- End section navbar -->
     <!-- start section header -->
-    <div id="header" class="home">
+    <div id="header" class="home img-responsive">
 
         <div class="container">
             <div class="header-content">
-                <h1>I'm <span class="typed"></span></h1>
+                <h1><span class="typed"></span></h1>
                 <p>Developer, Entrepenuer</p>
 
                 <ul class="list-unstyled list-social">
@@ -89,7 +110,7 @@ ntent/bootstrap.min.css" rel="stylesheet">
         <div class="container">
             <div class="row justify-content-between">
 
-                <div class="col-lg-4 ">
+                <div class="col-lg-4">
                     <img src="/images/fullsizeoutput_6ed6.jpeg" class="img-fluid" />
                     <div class="div-img-bg">
                         <div class="about-img">
@@ -101,8 +122,8 @@ ntent/bootstrap.min.css" rel="stylesheet">
                 <div class="col-lg-7">
                     <div class="about-descr">
 
-                        <p class="p-heading">Im Jonathan Haynes </p>
-                        <p class="separator">Im a 18 yeard old Software Developer and web Designer from Winston Salem North Carolina. Graduate from Atkins highschool also graduate from Coder Foundry</p>
+                        <p class="p-heading">Jonathan Haynes </p>
+                        <p class="separator">Being Young, Innovative and creative is everything I inspire to be</p>
 
                     </div>
 
@@ -112,24 +133,24 @@ ntent/bootstrap.min.css" rel="stylesheet">
     </div>
     <!-- end section about us -->
     <!-- start section services -->
-    <div id="services">
+    <!--<div id="services">
         <div class="container">
 
             <div class="services-carousel owl-theme">
 
                 <div class="services-block">
 
-                    <i class="ion-ios-browsers-outline"></i>
-                    <span>UI/UX DESIGN</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                    <i class="ion-ios-browsers-outline" data-toggle="modal" data-target="myModal5"></i>
+                    <span>BLOGS</span>
+                    <p class="separator">Click to see Blogs </p>
 
                 </div>
 
                 <div class="services-block">
 
-                    <i class="ion-ios-lightbulb-outline"></i>
-                    <span>BRAND IDENTITY</span>
-                    <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                    <i class="ion-ios-lightbulb-outline" href="#" data-toggle="popover" title="Click me" data-content="Resume"></i>
+                    <span>RESUME</span>
+                    <p class="separator">Click to see Resume </p>
 
                 </div>
 
@@ -169,27 +190,27 @@ ntent/bootstrap.min.css" rel="stylesheet">
 
         </div>
 
-    </div>
+    </div>-->
     <!-- end section services -->
     <!-- start section portfolio -->
     <div id="portfolio" class="text-center paddsection">
 
         <div class="container">
             <div class="section-title text-center">
-                <h2>My Portfolio</h2>
+                <h2>Exercises</h2>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
+
                 <div class="col-md-12 text-center justify-content-center">
 
                     <div class="portfolio-list">
-
                         <ul class="nav list-unstyled" id="portfolio-flters">
                             <li class="filter filter-active" data-filter=".all">all</li>
                             <li class="filter" data-filter=".Challenges ">Challenges</li>
-                            <li class="filter" data-filter=".Projects">Projects</li>
+                            <li class="filter" data-filter=".Projects">Upcoming Projects</li>
 
                         </ul>
 
@@ -197,40 +218,40 @@ ntent/bootstrap.min.css" rel="stylesheet">
 
                     <div class="portfolio-container">
 
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all Challenges">
-                            <a href="images/1.jpg" data-toggle="modal" data-target="#myModal" data-target="#myModal2">
-                                <img src="/images/1.jpg" alt="img">
-                            </a>
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail  all Challenges">
+                            <span href="images/1.jpg" data-toggle="modal" data-target="#myModal">
+                                <img src="/images/1.jpg" data-toggle="tooltip" title="Math Exercise">
+                            </span>
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all Challenges">
-                            <a class="popup-img" href="images/2.jpg">
-                                <img src="/images/2.jpg" alt="img">
-                            </a>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all Projects">
-                            <a class="popup-img" href="images/3.jpg">
-                                <img src="/images/3.jpg" alt="img">
-                            </a>
+                            <span href="images/2.jpg" data-toggle="modal" data-target="#myModal3">
+                                <img src="/images/2.jpg" data-toggle="tooltip" title="FizzBuzz">
+                            </span>
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all Challenges">
-                            <a class="popup-img" href="images/4.jpg">
-                                <img src="/images/4.jpg" alt="img">
-                            </a>
+                            <span href="images/3.jpg" data-toggle="modal" data-target="#myModal2">
+                                <img src="/images/3.jpg" data-toggle="tooltip" title="Factorial">
+                            </span>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-thumbnail all Challenges">
+                            <span href="images/4.jpg" data-toggle="modal" data-target="#myModal4">
+                                <img src="/images/4.jpg" data-toggle="tooltip" title="Palindrome">
+                            </span>
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all Projects">
-                            <a class="popup-img" href="images/5.jpg">
-                                <img src="/images/5.jpg" alt="img">
-                            </a>
+                            <span href="images/5.jpg" data-toggle="modal" data-target="#myModal5">
+                                <img src="/images/5.jpg" data-toggle="tooltip" title="Coming soon...">
+                            </span>
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all Projects">
-                            <a class="popup-img" href="images/6.jpg">
-                                <img src="/images/6.jpg" alt="img">
-                            </a>
+                            <span href="images/6.jpg" data-toggle="modal" data-target="#myModal5">
+                                <img src="/images/6.jpg" data-toggle="tooltip" title="Coming soon...">
+                            </span>
                         </div>
 
                     </div>
@@ -245,7 +266,7 @@ ntent/bootstrap.min.css" rel="stylesheet">
 
         <div class="container">
             <div class="section-title text-center">
-                <h2>resume</h2>
+                <h2>Projects</h2>
             </div>
         </div>
 
@@ -260,9 +281,9 @@ ntent/bootstrap.min.css" rel="stylesheet">
 
                             <div class="journal-txt">
 
-                                <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
+                                <h4><a href="blog-single.html">Bug Tracker</a></h4>
                                 <p class="separator">
-                                    To an English person, it will seem like simplified English
+                                    Useful and Powerful
                                 </p>
 
                             </div>
@@ -277,9 +298,9 @@ ntent/bootstrap.min.css" rel="stylesheet">
 
                             <div class="journal-txt">
 
-                                <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
+                                <h4><a href="#blog-single.html">Blogs</a></h4>
                                 <p class="separator">
-                                    To an English person, it will seem like simplified English
+                                    Introduction to my life
                                 </p>
 
                             </div>
@@ -294,9 +315,9 @@ ntent/bootstrap.min.css" rel="stylesheet">
 
                             <div class="journal-txt">
 
-                                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
+                                <h4><a href="blog-single.html">Upcoming Projects</a></h4>
                                 <p class="separator">
-                                    To an English person, it will seem like simplified English
+                                    To be continued
                                 </p>
 
                             </div>
@@ -367,7 +388,7 @@ ntent/bootstrap.min.css" rel="stylesheet">
                                 </div>
 
                                 <div class="col-lg-12">
-                                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                                    <input type="submit" class="btn btn-primary btn-send" value="Send message">
                                 </div>
 
                             </div>
@@ -409,15 +430,9 @@ ntent/bootstrap.min.css" rel="stylesheet">
         </div>
     </div>
     <!-- End section footer -->
-
-
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-        Open modal
-    </button>
-
-    <!--Modal placeholder section-->
-    <div class="modal fade" id="myModal">
-        <div class="modal-dialog">
+    <!--Math Exercise Modal-->
+    <div class="modal fade animated flipInX" id="myModal">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -427,118 +442,206 @@ ntent/bootstrap.min.css" rel="stylesheet">
                 </div>
 
                 <!-- Modal body -->
+
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-4">4</div>
-                        <div class="col-md-4">4</div>
-                        <div class="col-md-4">4</div>
+                    <div class="container">
+                        <div class=" col text-center h3">
+                            Math Exercises
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-6">
+                                <div class="row">
+                                    <div class="col">
+
+                                        <input type="number" id="input1" class="txt-Wide" />
+
+                                    </div>
+                                    <div class="col">
+
+                                        <input type="number" id="input2" class="txt-Wide" />
+
+                                    </div>
+                                    <div class="col">
+
+                                        <input type="number" id="input3" class="txt-Wide" />
+
+                                    </div>
+                                    <div class="col">
+
+                                        <input type="number" id="input4" class="txt-Wide" />
+
+                                    </div>
+                                    <div class="col">
+
+                                        <input type="number" id="input5" class="txt-Wide" />
+
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="row padded">
+                                    <div class="col">
+                                        <button class="btn btn-success btn-sm btn-Wide" id="mathexer">calculate</button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-primary btn-sm btn-Wide" id="btnClear">clear</button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-warning btn-sm btn-Wide" id="btnMathCode">Show Code</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class=" col-6">
+                                <div class="row">
+                                    <label id="results"></label><br />
+                                </div>
+                                <div class="row">
+                                    <label id="resultsSmallest"></label><br />
+                                </div>
+                                <div class="row">
+                                    <label id="resultsLargest"></label><br />
+                                </div>
+                                <div class="row">
+                                    <label id="resultsProduct"></label><br />
+                                </div>
+                                <div class=" row">
+                                    <label id="resultsAverage"></label><br />
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">6</div>
-                        <div class="col-md-6">6</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">12</div>
-                    </div>
+
+
                 </div>
+
+
+
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Close</button>
                 </div>
 
             </div>
         </div>
     </div>
-
-    <!-- Button to Open the Modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
-        Open modal
-    </button>
-
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal2">
-        <div class="modal-dialog">
+    <!-- Factorial Modal -->
+    <div class="modal fade animated flipInX" id="myModal2">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
+                    <h4 class="modal-title">Factorial</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
+                    <div class=" col text-center h3">
+                        Factorial
+                    </div>
                     <div class="row">
-                        <div class="col-md-3">3</div>
-                        <div class="col-md-3">3</div>
-                        <div class="col-md-3">3</div>
-                        <div class="col-md-3">3</div>
+                        <div class="col">
+
+                            <input type="number" placeholder="enter number" class="form-control" id="fact" />
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-success btn-Wide" id="btnFact">Calculate</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-Wide" id="factbtnClear">Clear</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-warning btn-Wide" id="btnfactCode">Show Code</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <p id="factOut"></p>
+                        </div>
                     </div>
                 </div>
+
+
+
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
-
             </div>
+
+
         </div>
-    </div>
+
 
     </div>
-
-    <!--Modal 3-->
-    <!-- Button to Open the Modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
-        Open modal
-    </button>
-
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal3">
-        <div class="modal-dialog">
+    </div>
+    <!-- FizzBuzz -->
+    <div class="modal fade animated flipInX" id="myModal3">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
+                    <h4 class="modal-title">FizzBuzz</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-8">8</div>
-                        <div class="col-md-4">4</div>
+                    <div class=" col text-center h3">
+                        FizzBuzz
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">6</div>
-                        <div class="col-md-3">3</div>
-                        <div class="col-md-3">3</div>
+                    <div class="form-group">
+                        <label for="num1">First number:</label>
+                        <input type="number" class="form-control" id="num1">
                     </div>
-                    <div class="row">
-                        <div class="col-md-2">2</div>
-                        <div class="col-md-3">3</div>
-                        <div class=" col-md-2">2</div>
-                        <div class=" col-md-3">3</div>
-                        <div class=" col-md-2">2</div>
+                    <div class="form-group">
+                        <label for="num2">Second number:</label>
+                        <input type="number" class="form-control" id="num2">
                     </div>
-                    <div class="row">
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
-                        <div class=" col-md-1">1</div>
+
+                    <div>
+                        <label id="fbResults" value="fbResults"> </label>
+
+
                     </div>
+
                 </div>
 
+
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <button id="btnLoop" class="btn btn-success btn-Wide" onclick="FizzBuzzA(num1.value,num2.value)">calculate</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button id="fizzClear" class="btn btn-primary btn-Wide">clear</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-warning btn-Wide" id="btnfizzCode">Show Code</button>
+                    </div>
+                        <!--<button id="btnLoop" class="btn btn-success btn-Wide" onclick="FizzBuzzA(num1.value,num2.value)">calculate</button>
+                        <button id="btnLoop" class="btn btn-primary btn-Wide" onclick="fizzClear">clear</button>-->
+                </div>
                 <!-- Modal footer -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -548,24 +651,90 @@ ntent/bootstrap.min.css" rel="stylesheet">
         </div>
     </div>
 
+    <!-- Palendrone -->
+    <!-- Modal -->
+    <div id="myModal4" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-xl">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Palindrome</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" placeholder="Enter data" class="form-control" id="inputPal">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-success btn-Wide" id="palindrone">Palindrome?</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-primary btn-Wide" id="palbtnClear">clear</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-warning btn-Wide" id="btnpalCode">Show Code</button>
+                            </div>
+                        </div>
+                            
+                        <div class="row">
+                            <div class="col">
+                                <p id="resultsPal"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
     </div>
 
+    <!--//icon-->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sorry</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Coming Soon:D</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="/Scripts/jquery.min.js"></script>
-    <script src="/Scripts/jquery-migrate.min.js"></script>
-    <script src="/Scripts/bootstrap.bundle.min.js"></script>
-    <script src="/Scripts/typed.js"></script>
-    <script src="/Scripts/owl.carousel.min.js"></script>
-    <script src="/Scripts/magnific-popup.min.js"></script>
-    <script src="/Scripts/isotope.pkgd.min.js"></script>
+            <!-- JavaScript Libraries -->
+            <script src="/Scripts/jquery.min.js"></script>
+            <script src="/Scripts/jquery-migrate.min.js"></script>
+            <script src="Scripts/bootstrap.min.js"></script>
+            <script src="/Scripts/bootstrap.bundle.min.js"></script>
+            <script src="/Scripts/typed.js"></script>
+            <script src="/Scripts/owl.carousel.min.js"></script>
+            <script src="/Scripts/magnific-popup.min.js"></script>
+            <script src="/Scripts/isotope.pkgd.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
-    <!-- Contact Form JavaScript File -->
-    <script src="/Scripts/contactform.js"></script>
 
-    <!-- Template Main Javascript File -->
-    <script src="/Scripts/main.js"></script>
+            <!-- Contact Form JavaScript File -->
+            <script src="/Scripts/contactform.js"></script>
+
+            <!-- Template Main Javascript File -->
+            <script src="/Scripts/main.js"></script>
 
 </body>
 
